@@ -1,7 +1,7 @@
 {
-  "name": "Edwin Tantawi",
-  "status": "Front-End Web Engineer",
-  "description": "I am passionate and interested in the ever-growing field of Web Front-End development",
+  "name": "Vijay Chandar",
+  "status": "Fullstack AI Engineer",
+  "description": "I am passionate and interested in the ever-growing field of AI and ML",
   "navigations": [
     {
       "id": 1,
@@ -18,11 +18,7 @@
       "name": "Projects",
       "url": "/projects"
     },
-    {
-      "id": 4,
-      "name": "Articles",
-      "url": "https://edwintantawi.medium.com/"
-    },
+
     {
       "id": 5,
       "name": "About",
@@ -37,86 +33,86 @@
   "services": [
     {
       "id": 1,
-      "name": "Ui Ux design",
-      "description": "Develop a good user interface and user experience, with a beautiful and comfortable appearance",
-      "icon": "/services/service-uiux.svg"
+      "name": "Neural Network Training",
+      "description": "Design and train custom neural networks tailored for specific tasks, ensuring high accuracy and performance.",
+      "icon": "/services/service-neuralnetwork.svg"
     },
     {
       "id": 2,
-      "name": "Website dev",
-      "description": "Developing a website appearance based on design into a website that can be use. With good performance",
-      "icon": "/services/service-website.svg"
+      "name": "LLM Integration",
+      "description": "Integrate and fine-tune Large Language Models (LLMs) for various applications, including chatbots, content generation, and more.",
+      "icon": "/services/service-llm.svg"
     },
     {
       "id": 3,
-      "name": "WebApps dev",
-      "description": "Developing a very well-functioning web applications, various features and performance",
-      "icon": "/services/service-webapps.svg"
+      "name": "API Development",
+      "description": "Develop robust REST APIs using FastAPI and Flask to support AI-driven applications and services.",
+      "icon": "/services/service-api.svg"
     },
     {
       "id": 4,
-      "name": "Responsive design",
-      "description": "Develop a good Frontend design for mobile, tablet, desktop and all screen devices",
-      "icon": "/services/service-rwd.svg"
+      "name": "Machine Learning Pipelines",
+      "description": "Create end-to-end machine learning pipelines using TensorFlow, Keras, and Scikit-learn for efficient model deployment.",
+      "icon": "/services/service-mlpipeline.svg"
     },
     {
       "id": 5,
-      "name": "Best Performance",
-      "description": "Develop a good Performance website and web application for more better experience",
-      "icon": "/services/service-performance.svg"
+      "name": "Cloud ML/AI Services",
+      "description": "Leverage Azure, AWS, and Google Cloud to deploy and manage scalable ML and AI services.",
+      "icon": "/services/service-cloudmlai.svg"
     },
     {
       "id": 6,
-      "name": "Progressive Web Apps",
-      "description": "Develop a Progressive web apps, create website and website with native apps experience",
-      "icon": "/services/service-pwa.svg"
+      "name": "DevOps for AI/ML",
+      "description": "Implement DevOps practices using Docker, Terraform, and CI/CD pipelines to streamline AI/ML project workflows.",
+      "icon": "/services/service-devops.svg"
     }
   ],
   "skills": [
     {
       "id": 1,
-      "name": "HTML 5",
-      "icon": "/skills/skill-html5.svg"
+      "name": "Tensorflow",
+      "icon": "/skills/skill-tensorflow.svg"
     },
     {
       "id": 2,
-      "name": "CSS 3",
-      "icon": "/skills/skill-css3.svg"
+      "name": "Keras",
+      "icon": "/skills/skill-keras.svg"
     },
     {
       "id": 3,
-      "name": "Javascript",
-      "icon": "/skills/skill-javascript.svg"
+      "name": "Scikit-Learn",
+      "icon": "/skills/skill-scikit-learn.svg"
     },
     {
       "id": 4,
-      "name": "TailwindCss",
-      "icon": "/skills/skill-tailwindcss.svg"
+      "name": "Langchain",
+      "icon": "/skills/skill-langchain.svg"
     },
     {
       "id": 5,
-      "name": "Bootstrap",
-      "icon": "/skills/skill-bootstrap.svg"
+      "name": "FastAPI",
+      "icon": "/skills/skill-fastapi.svg"
     },
     {
       "id": 6,
-      "name": "Webpack 5",
-      "icon": "/skills/skill-webpack.svg"
-    },
-    {
-      "id": 7,
-      "name": "React JS",
-      "icon": "/skills/skill-reactjs.svg"
-    },
-    {
-      "id": 8,
       "name": "Next JS",
       "icon": "/skills/skill-nextjs.svg"
     },
     {
+      "id": 7,
+      "name": "Tailwind CSS",
+      "icon": "/skills/skill-tailwindcss.svg"
+    },
+    {
+      "id": 8,
+      "name": "Terraform",
+      "icon": "/skills/skill-terraform.svg"
+    },
+    {
       "id": 9,
-      "name": "Firebase",
-      "icon": "/skills/skill-firebase.svg"
+      "name": "Docker",
+      "icon": "/skills/skill-docker.svg"
     },
     {
       "id": 10,
@@ -130,8 +126,28 @@
     },
     {
       "id": 12,
-      "name": "PWA",
-      "icon": "/skills/skill-pwa.svg"
+      "name": "GCP",
+      "icon": "/skills/skill-gcp.svg"
+    },
+    {
+      "id": 13,
+      "name": "AWS",
+      "icon": "/skills/skill-aws.svg"
+    },
+    {
+      "id": 13,
+      "name": "Azure",
+      "icon": "/skills/skill-azure.svg"
+    },
+    {
+      "id": 13,
+      "name": "MySQL",
+      "icon": "/skills/skill-mysql.svg"
+    },
+    {
+      "id": 13,
+      "name": "MongoDB",
+      "icon": "/skills/skill-mongodb.svg"
     }
   ],
   "project": {
@@ -244,36 +260,12 @@
     "description": "Chat with me through some of the contacts you can call to get acquainted.",
     "contents": [
       {
-        "id": 1,
-        "icon": "fab fa-whatsapp",
-        "name": "WhatsApp",
-        "username": "+62 823 8838 6923",
-        "category": "Social Media",
-        "url": "https://wa.me/+6282388386923"
-      },
-      {
-        "id": 2,
-        "icon": "fab fa-instagram",
-        "name": "Instagram",
-        "username": "@wintantawi",
-        "category": "Social Media",
-        "url": "https://instagram.com/wintantawi"
-      },
-      {
         "id": 3,
         "icon": "fab fa-twitter",
         "name": "Twitter",
         "username": "@wintantawi",
         "category": "Social Media",
         "url": "https://twitter.com/wintantawi"
-      },
-      {
-        "id": 4,
-        "icon": "fab fa-facebook-f",
-        "name": "Facebook",
-        "username": "Edwin Tantawi",
-        "category": "Social Media",
-        "url": "https://facebook.com/edwintantawi.5"
       },
       {
         "id": 5,
@@ -298,15 +290,8 @@
         "username": "edwintantawi@gmail.com",
         "category": "Email",
         "url": "mailto:edwintantawi@gmail.com"
-      },
-      {
-        "id": 8,
-        "icon": "far fa-compass",
-        "name": "Location",
-        "username": "Medan, Indonesia",
-        "category": "location",
-        "url": "https://www.google.com/maps/place/Medan,+Medan+City,+North+Sumatra/@3.6422838,98.5994534,12z/data=!3m1!4b1!4m5!3m4!1s0x303131cc1c3eb2fd:0x23d431c8a6908262!8m2!3d3.5951956!4d98.6722227"
       }
+
     ]
   },
   "about": {

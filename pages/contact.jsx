@@ -5,7 +5,7 @@ import AppHeader from '../components/organisms/AppHeader';
 
 const Contact = () => (
   <AppShell
-    title={`Edwin Tantawi | ${USER.contact.title}`}
+    title={`Vijay Chandar | ${USER.contact.title}`}
     description={USER.contact.description}
     keyword="contact me, contact, social media"
     cta={false}

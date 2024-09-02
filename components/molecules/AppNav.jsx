@@ -56,7 +56,7 @@ const AppNav = () => {
         <Link href="/" className="flex items-center">
           <Image
             src="/edwintantawi.svg"
-            alt="Edwin Tantawi"
+            alt="Vijay Chandar"
             width={40}
             height={40}
           />

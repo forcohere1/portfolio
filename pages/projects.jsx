@@ -6,7 +6,7 @@ import AppProject from '../components/atomics/AppProject';
 
 const Project = () => (
     <AppShell
-      title={`Edwin Tantawi | ${USER.project.title}`}
+      title={`Vijay Chandar | ${USER.project.title}`}
       description={USER.project.desctiption}
       keyword="project, projects, portfolio project, web development project, skill"
     >

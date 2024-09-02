@@ -6,7 +6,7 @@ import AppShell from '../components/templates/AppShell';
 
 const Resume = () => (
   <AppShell
-    title={`Edwin Tantawi | ${USER.resume.title}`}
+    title={`Vijay Chandar | ${USER.resume.title}`}
     description={USER.resume.description}
     keyword="resume, education, course, skill"
   >

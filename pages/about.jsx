@@ -5,7 +5,7 @@ import AppSection from '../components/molecules/AppSection';
 
 const About = () => (
   <AppShell
-    title={`Edwin Tantawi | ${USER.about.title}`}
+    title={`Vijay Chandar | ${USER.about.title}`}
     description={USER.about.description}
     keyword="about me, about, me, history"
   >

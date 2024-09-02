@@ -2,7 +2,7 @@ import USER from '../../data/user.json';
 
 const AppFooter = () => {
   const handleCopyrightYears = () => {
-    const startYears = '2021';
+    const startYears = '2024';
     const nowYears = new Date().getFullYear();
     const rangeYears =
       startYears === nowYears.toString()
@@ -13,8 +13,7 @@ const AppFooter = () => {
 
   return (
     <footer className="text-center text-xs md:text-md text-gray py-7">
-      <p className="mb-1">Design & Build With &#128149; by {USER.name}</p>
-      <p>copyright &copy; {handleCopyrightYears()}</p>
+      <p> &copy; {handleCopyrightYears()}</p>
     </footer>
   );
 };

@@ -18,7 +18,7 @@ const AppShell = ({ title, keyword, description, hero, cta, children }) => (
     {hero && <AppHero />}
     <AppContainer>
       {children}
-      <AppSignature />
+      {/* <AppSignature /> */}
       {cta && <AppCtaSection />}
       <AppFooter />
     </AppContainer>
@@ -34,9 +34,9 @@ AppShell.propTypes = {
 };
 
 AppShell.defaultProps = {
-  title: 'Edwin Tantawi',
+  title: 'Vijay Chandar',
   description:
-    'I am a student from Indonesia, who focuses on web development, especially frontend web development.',
+    'I am an AI Fullstack Engineer from India, focusing on custom neural network creation and fine-tuning, especially frontend web development.',
   keyword: '',
   hero: false,
   cta: true,
