@@ -55,10 +55,10 @@ const AppNav = () => {
       >
         <Link href="/" className="flex items-center">
           <Image
-            src="/edwintantawi.svg"
+            src="/logo-512*512.png"
             alt="Vijay Chandar"
-            width={40}
-            height={40}
+            width={70}
+            height={70}
           />
         </Link>
 

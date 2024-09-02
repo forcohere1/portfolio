@@ -135,17 +135,17 @@
       "icon": "/skills/skill-aws.svg"
     },
     {
-      "id": 13,
+      "id": 14,
       "name": "Azure",
       "icon": "/skills/skill-azure.svg"
     },
     {
-      "id": 13,
+      "id": 15,
       "name": "MySQL",
       "icon": "/skills/skill-mysql.svg"
     },
     {
-      "id": 13,
+      "id": 16,
       "name": "MongoDB",
       "icon": "/skills/skill-mongodb.svg"
     }

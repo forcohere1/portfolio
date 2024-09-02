@@ -36,7 +36,7 @@ AppShell.propTypes = {
 AppShell.defaultProps = {
   title: 'Vijay Chandar',
   description:
-    'I am an AI Fullstack Engineer from India, focusing on custom neural network creation and fine-tuning, especially frontend web development.',
+    'I am an AI Fullstack Engineer from India, focusing on custom neural network creation and fine-tuning',
   keyword: '',
   hero: false,
   cta: true,
