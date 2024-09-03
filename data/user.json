@@ -1,6 +1,6 @@
 {
   "name": "Vijay Chandar",
-  "status": "Fullstack AI Engineer",
+  "status": " AI Software Developer",
   "description": "Driven by a deep passion for the rapidly evolving world of AI and machine learning.",
   "navigations": [
     {
@@ -152,11 +152,11 @@
   ],
   "project": {
     "title": "Project",
-    "desctiption": "some of the projects that I've worked on to completion with some of the technologies",
+    "desctiption": "Some completed projects I've worked on, utilizing various technologies",
     "contents": [
       {
         "id": 1,
-        "top": false,
+        "top": true,
         "image": "https://firebasestorage.googleapis.com/v0/b/edwintantawi-25f09.appspot.com/o/projects%2Fcookingbox.png?alt=media",
         "name": "CookingBox",
         "stack": "HTML, CSS, PWA",
@@ -165,7 +165,7 @@
       },
       {
         "id": 2,
-        "top": false,
+        "top": true,
         "image": "https://firebasestorage.googleapis.com/v0/b/edwintantawi-25f09.appspot.com/o/projects%2Fnetflix-clone.png?alt=media",
         "name": "Netflix Clone",
         "stack": "React JS, CSS, TMDB API",
@@ -174,307 +174,258 @@
       },
       {
         "id": 3,
-        "top": false,
+        "top": true,
         "image": "https://firebasestorage.googleapis.com/v0/b/edwintantawi-25f09.appspot.com/o/projects%2Fwhatsapp-clone.png?alt=media",
         "name": "Whatsapp Clone",
         "stack": "React JS, CSS, Firebase",
         "category": "Personal Project",
         "url": "https://clone-whatsapp-web.netlify.app/"
-      },
-      {
-        "id": 4,
-        "top": false,
-        "image": "https://firebasestorage.googleapis.com/v0/b/edwintantawi-25f09.appspot.com/o/projects%2Fweneeddev.png?alt=media",
-        "name": "WeNeedDev",
-        "stack": "HTML, CSS, Bootstrap 5",
-        "category": "Personal Project",
-        "url": "https://weneeddev.netlify.app/"
-      },
-      {
-        "id": 5,
-        "top": false,
-        "image": "https://firebasestorage.googleapis.com/v0/b/edwintantawi-25f09.appspot.com/o/projects%2Fpinterest-clone.png?alt=media",
-        "name": "Pinterest Clone",
-        "stack": "React JS, CSS, Unsplash API",
-        "category": "Personal Project",
-        "url": "https://clone-pinterest-web.netlify.app/"
-      },
-      {
-        "id": 6,
-        "top": false,
-        "image": "https://firebasestorage.googleapis.com/v0/b/edwintantawi-25f09.appspot.com/o/projects%2Fgoogle-clone.png?alt=media",
-        "name": "Google Clone",
-        "stack": "React JS, CSS, Google API",
-        "category": "Personal Project",
-        "url": "https://clone-google-web.netlify.app/"
-      },
-      {
-        "id": 7,
-        "top": false,
-        "image": "https://firebasestorage.googleapis.com/v0/b/edwintantawi-25f09.appspot.com/o/projects%2Ftodonesia.png?alt=media",
-        "name": "Todonesia",
-        "stack": "React JS, Firebase, StyledComponent",
-        "category": "Personal Project",
-        "url": "https://todonesia.netlify.app/"
-      },
-      {
-        "id": 9,
-        "top": true,
-        "image": "https://firebasestorage.googleapis.com/v0/b/edwintantawi-25f09.appspot.com/o/projects%2Fairbnb-clone.png?alt=media",
-        "name": "Airbnb Clone",
-        "stack": "Next JS, Tailwindcss",
-        "category": "Personal Project",
-        "url": "https://airbnb-web-clone.vercel.app/"
-      },
-      {
-        "id": 10,
-        "top": false,
-        "image": "https://firebasestorage.googleapis.com/v0/b/edwintantawi-25f09.appspot.com/o/projects%2Fdevsantara.png?alt=media",
-        "name": "Devsantara",
-        "stack": "Next JS, Tailwindcss, Markdown",
-        "category": "Personal Project",
-        "url": "https://devsantara.netlify.app/"
-      },
-      {
-        "id": 11,
-        "top": true,
-        "image": "https://firebasestorage.googleapis.com/v0/b/edwintantawi-25f09.appspot.com/o/projects%2Ffoodsery.png?alt=media",
-        "name": "Foodsery",
-        "stack": "Next JS, Tailwindcss, Spoonacular API",
-        "category": "Personal Project",
-        "url": "https://foodsery.vercel.app/"
-      },
-      {
-        "id": 12,
-        "top": true,
-        "image": "https://firebasestorage.googleapis.com/v0/b/edwintantawi-25f09.appspot.com/o/projects%2Fliquiz.png?alt=media",
-        "name": "LiQuiz",
-        "stack": "Next JS, Tailwindcss, OpenAI API",
-        "category": "Personal Project",
-        "url": "https://github.com/edwintantawi/liquiz"
       }
     ]
   },
   "contact": {
     "title": "Contact",
-    "description": "Chat with me through some of the contacts you can call to get acquainted.",
+    "description": "Feel free to reach out through any of the contacts provided to get acquainted.",
     "contents": [
       {
         "id": 3,
         "icon": "fab fa-twitter",
         "name": "Twitter",
-        "username": "@wintantawi",
+        "username": "@chandarvijay07",
         "category": "Social Media",
-        "url": "https://twitter.com/wintantawi"
+        "url": "https://twitter.com/chandarvijay07"
       },
       {
         "id": 5,
         "icon": "fab fa-linkedin-in",
         "name": "Linkedin",
-        "username": "Edwin Tantawi",
+        "username": "Vijay Chandar",
         "category": "Social Media",
-        "url": "https://www.linkedin.com/in/edwin-tantawi-909138193"
+        "url": "https://www.linkedin.com/in/chandarvijay07"
       },
       {
         "id": 6,
         "icon": "fab fa-github",
         "name": "Github",
-        "username": "edwintantawi",
+        "username": "chandarvijay07",
         "category": "Social Media",
-        "url": "https://github.com/edwintantawi"
+        "url": "https://github.com/chandarvijay07"
       },
       {
         "id": 7,
         "icon": "far fa-envelope",
         "name": "Gmail",
-        "username": "edwintantawi@gmail.com",
+        "username": "chandarvijay07@gmail.com",
         "category": "Email",
-        "url": "mailto:edwintantawi@gmail.com"
+        "url": "mailto:chandarvijay07@gmail.com"
       }
 
     ]
   },
   "about": {
     "title": "About",
-    "description": "Get acquainted further about me, story and biography of my life",
+    "description": "Discover more about my journey, aspirations, and ambitions in the world of AI.",
     "contents": [
       {
         "id": 1,
-        "name": "My History",
-        "description": "Hi, hello, introduce my name is Edwin Tantawi, I come from Indonesia, precisely in Deli Serdang district, North Sumatra. Now I am a student at Universitas Mikroskil majoring in Informatics Engineering located in the city of Medan, North Sumatra, Indonesia."
+        "name": "My Background",
+        "description": "Hello, I'm Vijay Chandar. I was born in Maryland, USA, and raised in Chennai, India. My journey has led me to pursue a career in AI, and I'm currently working as an AI intern at Samyak Tech Labs."
       },
       {
         "id": 2,
-        "name": "What am i Doing",
-        "description": "Now I'm focusing on college, and deepening web development, especially Frontend web development, now I'm keeping up with the latest trends in technology and continually learning and applying new concepts. I am also actively building my portfolio by building personal projects."
+        "name": "Current Focus",
+        "description": "I'm dedicated to becoming an AI engineer with a deep interest in fine-tuning and developing novel algorithms and models tailored by data. My current work involves continuous learning and applying new concepts to real-world challenges."
       },
       {
         "id": 3,
-        "name": "What Next",
-        "description": "My goal now is to master Front-End and Back-End technology. So that I can build a solution to an existing problem easily. Even though it is not easy and it takes a long time, I believe I can achieve it if I practice and learn continuously."
+        "name": "Future Goals",
+        "description": "Inspired by the groundbreaking work of companies like Cerebras and Groq, I aim to build a tech startup that pushes the boundaries of AI. My goal is to contribute significantly to the AI community and open-source projects, moving beyond the development of traditional chatbots."
       },
       {
         "id": 4,
-        "name": "Dreams and Wishes",
-        "description": "I hope, I want to build a start-up company to advance the technology industry in my country, Indonesia, and be an inspiration to others to become a good mentor to guide others to create a better future."
+        "name": "Vision",
+        "description": "I aspire to create innovative AI solutions that can address complex problems. My ultimate dream is to lead a startup that drives technological advancements and inspires others to explore new frontiers in AI."
       }
     ]
-  },
+},
   "resume": {
     "title": "Resume",
-    "description": "explore my experiences, rewards, and education, as well as my activeness",
+    "description": "Explore my experiences, certifications, and education, particularly in AI and cloud computing.",
     "contents": [
+      {
+        "id": 1,
+        "title": "Experience",
+        "contents": [
+          {
+            "id": 1,
+            "timestamp": "Apr 2024 - Present",
+            "name": "Samyak Tech Labs",
+            "info": "AI Software Developer",
+            "description": "Developing AI-driven solutions with a focus on fine-tuning large language models, Retrieval-Augmented Generation (RAG), and utilizing the OpenAI and Cohere APIs. Worked with frameworks like LlamaIndex to build a multilingual chatbot for Jyot, a Gujarati religious institution, effectively handling unstructured textual and audio data.",
+            "url": "https://www.samyaktechlabs.com/",
+            "list": [
+                {
+                  "id": 2,
+                  "timestamp": "",
+                  "name": "Next.js",
+                  "info": "React framework for building web applications",
+                  "description": "Utilized Next.js for building server-side rendered and statically generated web applications, enhancing performance and SEO.",
+                  "url": "https://nextjs.org/docs"
+                },
+                {
+                  "id": 3,
+                  "timestamp": "",
+                  "name": "AWS Lambda",
+                  "info": "Serverless compute service",
+                  "description": "Leveraged AWS Lambda to create and manage serverless functions, enabling scalable and cost-effective cloud computing.",
+                  "url": "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html"
+                },
+                {
+                  "id": 4,
+                  "timestamp": "",
+                  "name": "Azure Container Registries",
+                  "info": "Docker container registry service",
+                  "description": "Managed Docker container images with Azure Container Registries for seamless deployment and scalability in cloud environments.",
+                  "url": "https://learn.microsoft.com/en-us/azure/container-registry/"
+                },
+                {
+                  "id": 5,
+                  "timestamp": "",
+                  "name": "Docker",
+                  "info": "Containerization platform",
+                  "description": "Utilized Docker for creating and managing containers, ensuring consistent environments for application development and deployment.",
+                  "url": "https://docs.docker.com/get-started/overview/"
+                },
+                {
+                  "id": 6,
+                  "timestamp": "",
+                  "name": "Tesseract OCR",
+                  "info": "Optical Character Recognition engine",
+                  "description": "Implemented Tesseract OCR to convert scanned documents and images into searchable and editable text.",
+                  "url": "https://github.com/tesseract-ocr/tesseract"
+                },
+                {
+                  "id": 7,
+                  "timestamp": "",
+                  "name": "Pinecone",
+                  "info": "Vector database for similarity search and RAG",
+                  "description": "Utilized Pinecone as a vector database to enhance retrieval-augmented generation (RAG) for AI-driven applications.",
+                  "url": "https://docs.pinecone.io/docs"
+                }
+              ]
+
+          }
+        ]
+      },
       {
         "id": 2,
         "title": "Courses I Completed",
         "contents": [
           {
             "id": 5,
-            "timestamp": "1 Oct 2021 - 14 Dec 2021",
-            "name": "Insentif Program Referral AWS",
-            "info": "Dicoding Academy",
-            "description": "AWS Referral Program Incentives 90 days of learning opportunities at Dicoding, and complete the following classes:",
-            "url": "https://aws.dicoding.com/",
+            "timestamp": "1 Feb 2023 - 30 Apr 2023",
+            "name": "Deep Learning Specialization",
+            "info": "Deeplearning.AI",
+            "description": "A comprehensive introduction to deep learning, provided by Andrew Ng on Coursera, covering the following topics:",
+            "url": "https://www.coursera.org/specializations/deep-learning",
             "list": [
               {
                 "id": 1,
-                "name": "Belajar Fundamental Aplikasi Back-End",
+                "name": "Neural Networks and Deep Learning",
                 "level": "Intermediate",
-                "url": "https://www.dicoding.com/certificates/72ZDEJ0LVPYW"
+                "url": "https://www.coursera.org/learn/neural-networks-deep-learning"
               },
               {
                 "id": 2,
-                "name": "Menjadi Back-End Developer Expert",
-                "level": "Expert",
-                "url": "https://www.dicoding.com/certificates/JLX13RRQGP72"
+                "name": "Hyperparameter Tuning, Regularization and Optimization",
+                "level": "Intermediate",
+                "url": "https://www.coursera.org/learn/deep-neural-networks"
+              },
+              {
+                "id": 3,
+                "name": "Structuring Machine Learning Projects",
+                "level": "Intermediate",
+                "url": "https://www.coursera.org/learn/machine-learning-projects"
               }
             ]
           },
           {
             "id": 4,
-            "timestamp": "11 May 2021 - 4 Aug 2021",
-            "name": "IDCamp 2021",
-            "info": "Back-end Learning Path",
-            "description": "Scholarship to study programming at Dicoding Academy from Indosat Ooredoo, and complete the following classes:",
-            "url": "https://idcamp.indosatooredoo.com/",
+            "timestamp": "1 May 2023 - 31 Jul 2023",
+            "name": "Machine Learning",
+            "info": "Stanford University",
+            "description": "A foundational course in machine learning taught by Andrew Ng, focusing on supervised learning, unsupervised learning, and best practices in machine learning.",
+            "url": "https://www.coursera.org/learn/machine-learning",
             "list": [
               {
                 "id": 1,
-                "name": "Belajar Dasar Pemrograman JavaScript",
-                "level": "Beginner",
-                "url": "https://www.dicoding.com/certificates/RVZK4QLMMPD5"
-              },
-              {
-                "id": 2,
-                "name": "Belajar Membuat Aplikasi Back-End untuk Pemula",
-                "level": "Beginner",
-                "url": "https://www.dicoding.com/certificates/MEPJ504OLP3V"
-              }
-            ]
-          },
-          {
-            "id": 3,
-            "timestamp": "28 Apr 2021 - 10 May 2021",
-            "name": "Baparekraf Developer Day 2021",
-            "info": "Front-End Learning Path",
-            "description": "Scholarship to study programming at Dicoding Academy from Kemenparekraf Indonesia, and complete the following classes:",
-            "url": "https://bdd.kemenparekraf.go.id/",
-            "list": [
-              {
-                "id": 1,
-                "name": "Menjadi Front-End Web Developer Expert",
-                "level": "Expert",
-                "url": "https://www.dicoding.com/certificates/81P21DGOJZOY"
-              }
-            ]
-          },
-          {
-            "id": 2,
-            "timestamp": " 15 Mar 2021 - 01 Jul 2021",
-            "name": "Cloud and Back-End Developer Scholarship Program",
-            "info": "Cloud Computing AWS",
-            "description": "Scholarship to study Cloud and Backend at Dicoding Academy from AWS, and complete the following classes:",
-            "url": "https://aws.dicoding.com/",
-            "list": [
-              {
-                "id": 1,
-                "name": "Cloud Practitioner Essentials (Belajar Dasar AWS Cloud)",
-                "level": "Beginner",
-                "url": "https://www.dicoding.com/certificates/0LZ0DY5RRX65"
-              },
-              {
-                "id": 2,
-                "name": "Architecting on AWS (Membangun Arsitektur Cloud di AWS)",
+                "name": "Supervised Learning",
                 "level": "Intermediate",
-                "url": "https://www.dicoding.com/certificates/N9ZODGK66PG5"
-              }
-            ]
-          },
-          {
-            "id": 1,
-            "timestamp": "20 Jul 2020 - 09 Aug 2020",
-            "name": "Baparekraf Developer Day 2020",
-            "info": "Front-end Learning Path",
-            "description": "Scholarship to study programming at Dicoding Academy from Kemenparekraf Indonesia, and complete the following classes:",
-            "url": "https://bdd.kemenparekraf.go.id/",
-            "list": [
-              {
-                "id": 1,
-                "name": "Belajar Dasar Pemrograman Web",
-                "level": "Beginner",
-                "url": "https://www.dicoding.com/certificates/1RXY46WJ9PVM"
+                "url": "https://www.coursera.org/learn/machine-learning"
               },
               {
                 "id": 2,
-                "name": "Belajar Fundamental Front-End Web Development",
+                "name": "Unsupervised Learning",
                 "level": "Intermediate",
-                "url": "https://www.dicoding.com/certificates/JMZVM9OJ3ZN9"
+                "url": "https://www.coursera.org/learn/machine-learning"
               },
               {
                 "id": 3,
-                "name": "Membangun Progressive Web Apps",
-                "level": "Expert",
-                "url": "https://www.dicoding.com/certificates/JMZVM9OJNZN9"
+                "name": "Best Practices for Machine Learning",
+                "level": "Intermediate",
+                "url": "https://www.coursera.org/learn/machine-learning"
               }
             ]
-          }
+          },
+          {
+            "id": 6,
+            "timestamp": "15 Aug 2022 - 12 Nov 2022",
+            "name": "AWS Academy Certifications",
+            "info": "Amazon Web Services",
+            "description": "A series of courses completed through the AWS Academy, providing foundational knowledge and technical skills in cloud computing, machine learning, and data center operations.",
+            "url": "https://aws.amazon.com/training/awsacademy/",
+            "list": [
+              {
+                "id": 1,
+                "name": "AWS Academy Graduate - Machine Learning Foundations",
+                "level": "Foundational",
+                "url": "https://www.credly.com/badges/4f5338f3-4284-4cd0-b73e-7371b835f1a7/public"
+              },
+              {
+                "id": 2,
+                "name": "AWS Academy Graduate - Cloud Foundations",
+                "level": "Foundational",
+                "url": "https://www.credly.com/badges/d1003109-67f4-4d06-9155-4a6063553a86/public"
+              },
+              {
+                "id": 3,
+                "name": "AWS Academy Graduate - Data Center Technician",
+                "level": "Foundational",
+                "url": "https://www.credly.com/badges/9102403c-8a77-4b54-b7e0-2c5878504e15/public"
+              }
+            ]
+          }          
         ]
       },
       {
         "id": 3,
         "title": "Educational Level",
         "contents": [
-          {
-            "id": 1,
-            "timestamp": "2020 - Present",
-            "name": "Mikroskil University",
-            "info": "College",
-            "description": "Studying at Mikroskil University, Indonesia by majoring in Informatics Engineering",
-            "url": "https://mikroskil.ac.id/"
-          },
-          {
-            "id": 2,
-            "timestamp": "2017 - 2020",
-            "name": "SMK Methodist Tamora",
-            "info": "Vocational High School",
-            "description": "Demanding knowledge at the Methodist Junior high school Vocational School, Indonesia. By majoring in Computer Network Engineering",
-            "url": "https://web.facebook.com/methodist.tamora?_rdc=1&_rdr"
-          },
-          {
-            "id": 3,
-            "timestamp": "2014 - 2017",
-            "name": "SMP Mehodist Tamora",
-            "info": "Junior high school",
-            "description": "Demanding knowledge at the Methodist Tamora Junior high school, Indonesia.",
-            "url": "https://web.facebook.com/methodist.tamora?_rdc=1&_rdr"
-          },
-          {
-            "id": 4,
-            "timestamp": "2008 - 2014",
-            "name": "SD Mehodist Tamora",
-            "info": "Elementary school",
-            "description": "Demanding knowledge at the Methodist Tamora Elementary school, Indonesia.",
-            "url": "https://web.facebook.com/methodist.tamora?_rdc=1&_rdr"
+              {
+                "id": 1,
+                "timestamp": "2020 - 2024",
+                "name": "SRM Institute of Science and Technology (SRMIST), KTR",
+                "info": "Undergraduate",
+                "description": "Pursued a Bachelor of Technology in Computer Science Engineering with a specialization in Big Data Analytics. Graduated with a CGPA of 9.54.",
+                "url": "https://www.srmist.edu.in/"
+              },
+              {
+                "id": 2,
+                "timestamp": "2009 - 2020",
+                "name": "St. John's English School and Junior College, Besant Nagar, Chennai",
+                "info": "Schooling",
+                "description": "Completed schooling with a focus on Computer Science Engineering (CSE) and Physics, Chemistry, Mathematics (PCM). Scored 95.2% in Class 12 board exams in 2020.",
+                "url": "https://sjbn.edu.in/"
           }
         ]
       }
