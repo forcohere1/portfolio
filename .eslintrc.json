@@ -35,7 +35,7 @@
       {
         "js": "never",
         "jsx": "never",
-        "json": "never"
+        "json": "always"
       }
     ],
     "no-unused-vars": "warn"
