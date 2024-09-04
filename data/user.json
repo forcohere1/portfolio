@@ -157,30 +157,30 @@
       {
         "id": 1,
         "top": true,
-        "image": "https://firebasestorage.googleapis.com/v0/b/edwintantawi-25f09.appspot.com/o/projects%2Fcookingbox.png?alt=media",
-        "name": "CookingBox",
-        "stack": "HTML, CSS, PWA",
-        "category": "Personal Project",
-        "url": "https://cookingboxs.netlify.app"
+        "image": "https://firebasestorage.googleapis.com/v0/b/portfolio-daf77.appspot.com/o/JyotChat-v1.png?alt=media&token=7e70b30b-dbbd-4985-83e4-18d935f8357b",
+        "name": "JyotChat-V1",
+        "stack": "Next.js, FastAPI, Supabase, OpenAI API, Cohere API, Pinecone, Docker, Azure Container Registry, Azure App serives, Llama Index",
+        "category": "Internship Project",
+        "url": "https://jyotchat.azurewebsites.net/"
       },
       {
         "id": 2,
         "top": true,
-        "image": "https://firebasestorage.googleapis.com/v0/b/edwintantawi-25f09.appspot.com/o/projects%2Fnetflix-clone.png?alt=media",
-        "name": "Netflix Clone",
-        "stack": "React JS, CSS, TMDB API",
-        "category": "Personal Project",
-        "url": "https://clone-netflix-web.netlify.app/"
+        "image": "https://firebasestorage.googleapis.com/v0/b/portfolio-daf77.appspot.com/o/JyotChat-v2.png?alt=media&token=f4de4849-a30d-45f5-8c33-5af5db9aa9e1",
+        "name": "JyotChat-V2",
+        "stack": "Next.js, Pinecone Assistant API, Docker, Azure Container Registry, Azure App serives",
+        "category": "Internship Project",
+        "url": "https://jyotchat-pinecone.azurewebsites.net/"
       },
       {
         "id": 3,
         "top": true,
-        "image": "https://firebasestorage.googleapis.com/v0/b/edwintantawi-25f09.appspot.com/o/projects%2Fwhatsapp-clone.png?alt=media",
-        "name": "Whatsapp Clone",
-        "stack": "React JS, CSS, Firebase",
-        "category": "Personal Project",
-        "url": "https://clone-whatsapp-web.netlify.app/"
-      }
+        "image": "https://firebasestorage.googleapis.com/v0/b/portfolio-daf77.appspot.com/o/OCR-SAAS.png?alt=media&token=1417f287-004a-4116-8ab2-5d4b1b662d46",
+        "name": "OCR SaaS App",
+        "stack": "Next.js 15, Flask, TRPC, Kinde Auth, Razorpay, Tesseract OCR, Azure Functions, Azure Blob Storage, ShadCN",
+        "category": "Internship Project",
+        "url": ""
+      }      
     ]
   },
   "contact": {
@@ -424,7 +424,7 @@
                 "timestamp": "2009 - 2020",
                 "name": "St. John's English School and Junior College, Besant Nagar, Chennai",
                 "info": "Schooling",
-                "description": "Completed schooling with a focus on Computer Science Engineering (CSE) and Physics, Chemistry, Mathematics (PCM). Scored 95.2% in Class 12 board exams in 2020.",
+                "description": "Completed schooling with a focus on Computer Science (CSC) and Physics, Chemistry, Mathematics (PCM). Scored 95.2% in Class 12 board exams in 2020.",
                 "url": "https://sjbn.edu.in/"
           }
         ]
