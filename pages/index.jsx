@@ -4,10 +4,11 @@ import USER from '../data/user.json';
 import AppSection from '../components/molecules/AppSection';
 import AppProject from '../components/atomics/AppProject';
 import AppShell from '../components/templates/AppShell';
-
+import AppBlober from '../components/molecules/Appblober';
 const Home = () => (
   <div>
     <AppShell hero>
+     <AppBlober/>
       <AppSection title="What can I do">
         <div className="grid grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3 lg:gap-4">
           {USER.services.map((item) => (

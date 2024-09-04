@@ -16,11 +16,15 @@ const Contact = () => {
     setLoading(true); // Start loading
     setButtonState('Sending...'); // Change button text to show loading
 
+    const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+    const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+
     emailjs.sendForm(
-      process.env.REACT_APP_EMAILJS_SERVICE_ID || 'service_xu2n6e7',
-      process.env.REACT_APP_EMAILJS_TEMPLATE_ID || 'template_8as6w1w',
+      serviceID,
+      templateID,
       form.current,
-      'iBj4ZdC5wmSVNcXJi'  // Use the public key directly here
+      publicKey
     )
       .then((result) => {
           console.log(result.text);
