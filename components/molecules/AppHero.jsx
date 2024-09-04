@@ -20,7 +20,7 @@ const AppHero = () => (
           {DATA.description}
         </p>
         <AppButton title="GET IN TOUCH" href="/contact" className="mt-6" /> {/* Added margin-top */}
-      </div>
+        </div>
     </AppContainer>
   </header>
 );
