@@ -1,4 +1,5 @@
 # Website Portfolio [Vijay Chandar]
+
 ## Overview
 Welcome to my personal portfolio website. This site showcases my work as a web developer, featuring a bright and modern theme that combines white, primary, and black colors for a clean and professional look. It’s designed with responsiveness and accessibility in mind, ensuring an optimal experience across all devices. The site is also a Progressive Web App (PWA), offering enhanced performance and the capability to be installed like a native app.
 
