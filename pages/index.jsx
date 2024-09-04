@@ -5,6 +5,7 @@ import AppSection from '../components/molecules/AppSection';
 import AppProject from '../components/atomics/AppProject';
 import AppShell from '../components/templates/AppShell';
 import AppBlober from '../components/molecules/Appblober';
+
 const Home = () => (
   <div>
     <AppShell hero>
