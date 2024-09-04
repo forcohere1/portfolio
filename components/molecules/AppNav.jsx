@@ -53,7 +53,7 @@ const AppNav = () => {
           isActiveToggler && 'bg-white'
         } ${isActiveNav && 'bg-white'} px-3 md:px-0 py-3 md:py-0`}
       >
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items-center ">
           <Image
             src="/logo-512*512.png"
             alt="Vijay Chandar"
