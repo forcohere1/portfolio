@@ -7,9 +7,7 @@ const AppButton = ({ title, href, className, type }) => (
       href={href}
       className={`inline-block w-max p-2 mt-6 border border-light-gray ${className}`}
     >
-      <span
-        className={`inline-block min-w-[200px] text-xs lg:text-sm text-center font-bold py-3 px-9 bg-primary hover:bg-black text-white hover:text-white transition duration-300`}
-      >
+      <span className="inline-block min-w-[200px] text-xs lg:text-sm text-center font-bold py-3 px-9 bg-primary hover:bg-black text-white hover:text-white transition duration-300">
         {title}
       </span>
     </Link>
@@ -18,9 +16,7 @@ const AppButton = ({ title, href, className, type }) => (
       type={type === 'submit' || type === 'reset' ? type : 'button'}
       className={`inline-block w-max p-2 mt-6 border border-light-gray ${className}`}
     >
-      <span
-        className={`inline-block min-w-[200px] text-xs lg:text-sm text-center font-bold py-3 px-9 bg-primary hover:bg-black text-white hover:text-white transition duration-300`}
-      >
+      <span className="inline-block min-w-[200px] text-xs lg:text-sm text-center font-bold py-3 px-9 bg-primary hover:bg-black text-white hover:text-white transition duration-300">
         {title}
       </span>
     </button>

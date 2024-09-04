@@ -8,40 +8,34 @@ import AppButton from '../components/atomics/AppButton';
 
 const Contact = () => {
   const form = useRef();
-  const [buttonState, setButtonState] = useState('Send Message'); // Button text state
-  const [loading, setLoading] = useState(false); // Loading state
+  const [buttonState, setButtonState] = useState('Send Message');
+  const [loading, setLoading] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
-    setLoading(true); // Start loading
-    setButtonState('Sending...'); // Change button text to show loading
+    setLoading(true);
+    setButtonState('Sending...');
 
     const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
     const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
     const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
-    emailjs.sendForm(
-      serviceID,
-      templateID,
-      form.current,
-      publicKey
-    )
-      .then((result) => {
-          console.log(result.text);
-          setButtonState('✓ Sent!'); // Show checkmark when successful
-      }, (error) => {
-          console.log(error.text);
-          setButtonState('Failed'); // Optional: Show "Failed" in case of error
+    emailjs.sendForm(serviceID, templateID, form.current, publicKey)
+      .then(() => {
+        setButtonState('✓ Sent!');
+      })
+      .catch(() => {
+        setButtonState('Failed');
       })
       .finally(() => {
         setTimeout(() => {
-          setButtonState('Send Message'); // Reset after a delay
-          setLoading(false); // Stop loading
-        }, 2000); // Reset after 3 seconds
+          setButtonState('Send Message');
+          setLoading(false);
+        }, 2000);
       });
-  
-    e.target.reset(); // Reset the form after submission
-  };  
+
+    e.target.reset();
+  };
 
   return (
     <AppShell
@@ -50,12 +44,9 @@ const Contact = () => {
       keyword="contact me, contact, social media"
       cta={false}
     >
-      <AppHeader
-        title={USER.contact.title}
-        description={USER.contact.description}
-      />
+      <AppHeader title={USER.contact.title} description={USER.contact.description} />
 
-      {/* New Contact Form Section */}
+      {/* Contact Form Section */}
       <AppSection title="Send Me a Message">
         <div className="flex justify-center">
           <form ref={form} onSubmit={sendEmail} className="flex flex-col items-center md:w-1/2">
@@ -93,12 +84,12 @@ const Contact = () => {
                     r="10" 
                     stroke="currentColor" 
                     strokeWidth="4"
-                  ></circle>
+                  />
                   <path 
                     className="opacity-75" 
                     fill="currentColor" 
                     d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
-                  ></path>
+                  />
                 </svg>
               )}
               {buttonState}
@@ -107,7 +98,7 @@ const Contact = () => {
         </div>
       </AppSection>
 
-      {/* Existing Connect With Me Section */}
+      {/* Connect With Me Section */}
       <AppSection title="Checkout my Handles">
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
           {USER.contact.contents.map((item) => (
