@@ -13,11 +13,11 @@ const AppNav = () => {
   const activeLink = (url) => {
     const className =
       url === pathname
-        ? 'font-bold text-white hover:text-white lg:hover:text-primary lg:text-primary bg-primary '
-        : 'bg-light-gray bg-opacity-30 hover:text-primary';
+        ? 'font-bold text-primary hover:text-dark-primary'
+        : 'bg-light-gray bg-opacity-30 hover:text-primary dark:hover:text-dark-primary';
     return className;
   };
-
+  
   const handleWindowScroll = () => {
     const pageScrollPosition = window.pageYOffset;
     const targetPosition = 20;
@@ -45,13 +45,13 @@ const AppNav = () => {
   return (
     <nav
       className={`flex items-center justify-between fixed top-0 z-40 w-full max-w-[1905px] transform right-1/2 translate-x-1/2 md:px-10 2xl:px-20 md:py-3 transition duration-500 ${
-        isActiveNav && 'bg-white'
+        isActiveNav ? 'bg-white dark:bg-black' : ''
       }`}
     >
       <div
         className={`flex items-center justify-between w-full z-50 transition duration-500 ${
-          isActiveToggler && 'bg-white'
-        } ${isActiveNav && 'bg-white'} px-3 md:px-0 py-3 md:py-0`}
+          isActiveToggler ? 'bg-white dark:bg-black' : ''
+        } ${isActiveNav ? 'bg-white dark:bg-black' : ''} px-3 md:px-0 py-3 md:py-0`}
       >
         <Link href="/" className="flex items-center ">
           <Image
@@ -67,7 +67,7 @@ const AppNav = () => {
 
       <ul
         className={`flex transform transition duration-500 absolute lg:static 
-         bg-white lg:bg-transparent left-3 right-3 border lg:border-none border-light-gray p-8 lg:p-0 space-y-4 lg:space-y-0 flex-col lg:flex-row space-x-0 lg:space-x-14 rounded-xl z-10
+         bg-white dark:bg-black lg:bg-transparent dark:lg:bg-transparent left-3 right-3 border lg:border-none border-light-gray dark:border-dark-gray p-8 lg:p-0 space-y-4 lg:space-y-0 flex-col lg:flex-row space-x-0 lg:space-x-14 rounded-xl z-10
         ${
           isActiveToggler
             ? 'translate-y-[250px]'
@@ -91,7 +91,7 @@ const AppNav = () => {
       <div
         onClick={handleToggler}
         aria-hidden="true"
-        className={`fixed h-screen top-16 bottom-0 left-0 right-0 transition duration-500 invisible bg-black bg-opacity-80 ${
+        className={`fixed h-screen top-16 bottom-0 left-0 right-0 transition duration-500 invisible bg-black dark:bg-white bg-opacity-80 dark:bg-opacity-80 ${
           isActiveToggler && 'visible'
         }`}
       />

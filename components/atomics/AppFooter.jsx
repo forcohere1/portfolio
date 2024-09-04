@@ -12,7 +12,7 @@ const AppFooter = () => {
   };
 
   return (
-    <footer className="text-center text-xs md:text-md text-gray py-7">
+    <footer className="text-center text-xs md:text-md text-gray dark:text-light-white py-7">
       <p> &copy; {handleCopyrightYears()}</p>
     </footer>
   );

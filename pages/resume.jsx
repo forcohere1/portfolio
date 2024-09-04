@@ -22,18 +22,15 @@ const Resume = () => (
         href="https://firebasestorage.googleapis.com/v0/b/portfolio-daf77.appspot.com/o/Vijay_Chandar_CV.pdf?alt=media&token=068b81bf-cf4c-45ec-8f9e-aade810f6a99"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-block w-max p-2 mt-6 border border-light-gray"
+        className="inline-block w-max p-2 mt-6 border border-light-gray dark:border-dark-light-gray"
       >
         <span
-          className="inline-block min-w-[200px] text-xs lg:text-sm text-center font-bold py-3 px-9 bg-primary hover:bg-black text-white hover:text-white transition duration-300"
+          className="inline-block min-w-[200px] text-xs lg:text-sm text-center font-bold py-3 px-9 bg-primary hover:bg-black dark:bg-dark-primary dark:hover:bg-dark-gray text-white hover:text-white transition duration-300"
         >
           View & Download PDF Resume
         </span>
       </a>
     </div>
-
-
-
 
     {USER.resume.contents.map((item) => (
       <AppSection key={item.id} title={item.title} className="py-0">
@@ -48,7 +45,7 @@ const Resume = () => (
                       href={listItem.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-black hover:text-primary"
+                      className="text-black dark:text-primary hover:text-primary dark:hover:text-dark-primary"
                       title={listItem.level}
                     >
                       {listItem.name}

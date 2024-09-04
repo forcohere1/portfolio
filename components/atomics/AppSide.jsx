@@ -1,4 +1,5 @@
 import USER from '../../data/user.json';
+import ThemeToggle from './ThemeToggle';
 
 const AppSide = () => (
   <div className="hidden md:flex justify-between fixed bottom-0 left-0 right-0 z-10 w-full px-3 md:px-10 2xl:px-20 max-w-[1905px] mx-auto">
@@ -16,28 +17,29 @@ const AppSide = () => (
                 aria-label={item.name}
               >
                 <i
-                  className={`${item.icon} text-2xl transition duration-300 text-gray hover:text-primary transform hover:-translate-y-1`}
+                  className={`${item.icon} text-2xl transition duration-300 text-gray dark:text-dark-light-gray hover:text-primary dark:hover:text-dark-primary transform hover:-translate-y-1`}
                 />
               </a>
             </li>
           ))}
       </ul>
-      <div className="h-28 w-[2px] bg-primary mt-5" />
+      <div className="h-28 w-[2px] bg-primary dark:bg-dark-primary mt-5" />
     </aside>
     <aside className="flex flex-col justify-end items-center">
+      <ThemeToggle />
       {[USER.contact.contents.find((item) => item.category === 'Email')].map(
         (item) => (
           <a
             key={item.id}
             href={`mailto:${item.username}`}
-            className="text-gray transition duration-300 hover:text-primary tracking-widest"
+            className="text-gray dark:text-dark-light-gray transition duration-300 hover:text-primary dark:hover:text-dark-primary tracking-widest"
             style={{ writingMode: 'tb-rl' }}
           >
             {item.username}
           </a>
         )
       )}
-      <div className="h-28 w-[2px] bg-primary mt-5" />
+      <div className="h-28 w-[2px] bg-primary dark:bg-dark-primary mt-5" />
     </aside>
   </div>
 );

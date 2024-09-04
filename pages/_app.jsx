@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { analytics } from '../lib/firebase';
 import '../styles/globals.css';
+import { ThemeProvider } from "../components/atomics/ThemeProvider";
 
 const MyApp = ({ Component, pageProps }) => {
   useEffect(() => {
@@ -9,7 +10,11 @@ const MyApp = ({ Component, pageProps }) => {
     }
   }, []);
 
-  return <Component {...pageProps} />;
+  return (
+    <ThemeProvider attribute="class">
+      <Component {...pageProps} />
+    </ThemeProvider>
+);
 };
 
 export default MyApp;

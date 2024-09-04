@@ -9,7 +9,7 @@ const AppSection = ({ title, children, decoration, noSeparator }) => {
     return (
       <h2 className="text-xl lg:text-2xl font-bold mb-0 text-center">
         {titleStart}
-        <span className="text-primary"> {titleEnd}</span>
+        <span className="text-primary dark:text-dark-primary"> {titleEnd}</span>
       </h2>
     );
   };
@@ -17,7 +17,7 @@ const AppSection = ({ title, children, decoration, noSeparator }) => {
   return (
     <section
       className={`py-10 lg:py-16 px-3 ${
-        noSeparator || 'border-b border-light-gray border-opacity-50'
+        noSeparator || 'border-b border-light-gray dark:border-dark-gray border-opacity-50'
       }`}
     >
       {splitTitleColor(title)}

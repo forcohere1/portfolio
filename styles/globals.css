@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 /* .decoration::after {
   content: '';
   @apply hidden xl:block absolute top-0 -left-10 w-px h-60 bg-light-gray;
