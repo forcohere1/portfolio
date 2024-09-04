@@ -1,7 +1,9 @@
 # Website Portfolio [Vijay Chandar]
 
 ## Overview
-Welcome to my personal portfolio website. This site showcases my work as a web developer, featuring a bright and modern theme that combines white, primary, and black colors for a clean and professional look. It’s designed with responsiveness and accessibility in mind, ensuring an optimal experience across all devices. The site is also a Progressive Web App (PWA), offering enhanced performance and the capability to be installed like a native app.
+Welcome to my personal portfolio website. This platform showcases my expertise and projects as an AI software developer, reflecting a sophisticated and modern theme with a clean, professional aesthetic. The site integrates a bright color palette with primary accents and sleek black elements to create a visually engaging experience.
+
+Explore my portfolio to discover innovative solutions in neural networks, LLM integration, API development, and more. Whether you're interested in advanced AI applications or scalable cloud solutions, this site highlights my commitment to leveraging cutting-edge technologies to drive impactful results.
 
 ## Teach Stack
 - React.js with Next.js: For dynamic and server-side rendered content.
