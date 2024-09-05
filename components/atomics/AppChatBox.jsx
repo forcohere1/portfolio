@@ -1,28 +1,23 @@
+"use client";
+
 import { cn } from "../../lib/utils";
-import { useChat } from "ai/react";
 import { Bot, SendHorizontal, Trash, XCircle } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
-import { createPortal } from 'react-dom';
+import { createPortal } from "react-dom";
 
 export default function AIChatBox({ open, onClose }) {
-  const {
-    messages,
-    input,
-    handleInputChange,
-    handleSubmit,
-    setMessages,
-    isLoading,
-    error,
-  } = useChat();
-
+  const [messages, setMessages] = useState([]);
+  const [input, setInput] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(null);
   const inputRef = useRef(null);
   const scrollRef = useRef(null);
-  const [isBrowser, setIsBrowser] = useState(false);  // State to track if we're in the browser
+  const [isBrowser, setIsBrowser] = useState(false);
 
   useEffect(() => {
-    setIsBrowser(true);  // Set this to true when in the browser
+    setIsBrowser(true);
   }, []);
 
   useEffect(() => {
@@ -37,29 +32,67 @@ export default function AIChatBox({ open, onClose }) {
     }
   }, [open]);
 
+  const handleInputChange = (e) => {
+    setInput(e.target.value);
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    if (!input.trim()) return;
+
+    const userMessage = { id: Date.now(), role: "user", content: input };
+    setMessages((prevMessages) => [...prevMessages, userMessage]);
+    setInput("");
+
+    try {
+      setIsLoading(true);
+      const res = await fetch("/api/groq", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ content: input }),
+      });
+
+      if (!res.ok) {
+        throw new Error("Failed to fetch AI response.");
+      }
+
+      const data = await res.json();
+      const aiMessage = { id: Date.now(), role: "assistant", content: data.content };
+      setMessages((prevMessages) => [...prevMessages, aiMessage]);
+    } catch (error) {
+      console.error(error);
+      setError("Something went wrong. Please try again!");
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const handleClearMessages = () => {
+    setMessages([]);
+    setError(null);
+  };
+
   const lastMessageIsUser = messages[messages.length - 1]?.role === "user";
 
-  // Only return the portal if we're in the browser
   return isBrowser
     ? createPortal(
         <>
-          {/* Semi-transparent backdrop for the background (not affecting chatbox) */}
           {open && (
             <div className="fixed inset-0 bg-black/50 dark:bg-black/80 backdrop-blur-sm z-[999] pointer-events-none"></div>
           )}
 
-          {/* Chatbox */}
           <div
             className={cn(
-              "fixed bottom-0 right-0 z-[1000] w-full max-w-[500px] p-1 xl:right-36", // Reduced max-width
-              open ? "fixed" : "hidden",
+              "fixed bottom-0 right-0 z-[1000] w-full max-w-[500px] p-1 xl:right-36",
+              open ? "fixed" : "hidden"
             )}
           >
             <button onClick={onClose} className="mb-1 ms-auto block">
               <XCircle size={30} className="rounded-full bg-white dark:bg-black" />
             </button>
             <div className="flex h-[500px] flex-col rounded border bg-white dark:bg-black dark:border-dark-border shadow-xl">
-              {/* Ensure the chatbox has a solid background */}
               <div className="mt-3 h-full overflow-y-auto px-3" ref={scrollRef}>
                 {messages.map((message) => (
                   <ChatMessage message={message} key={message.id} />
@@ -78,7 +111,7 @@ export default function AIChatBox({ open, onClose }) {
                     message={{
                       id: "error",
                       role: "assistant",
-                      content: "Something went wrong. Please try again!",
+                      content: error,
                     }}
                   />
                 )}
@@ -99,7 +132,7 @@ export default function AIChatBox({ open, onClose }) {
                   type="button"
                   className="flex w-10 flex-none items-center justify-center text-foreground dark:text-dark-foreground"
                   title="Clear chat"
-                  onClick={() => setMessages([])}
+                  onClick={handleClearMessages}
                 >
                   <Trash size={24} />
                 </button>
@@ -113,7 +146,7 @@ export default function AIChatBox({ open, onClose }) {
                 <button
                   type="submit"
                   className="flex w-10 flex-none items-center justify-center disabled:opacity-50 text-foreground dark:text-dark-foreground"
-                  disabled={input.length === 0}
+                  disabled={input.length === 0 || isLoading}
                   title="Submit message"
                 >
                   <SendHorizontal size={24} />
@@ -122,9 +155,9 @@ export default function AIChatBox({ open, onClose }) {
             </div>
           </div>
         </>,
-        document.body // Portal target is body
+        document.body
       )
-    : null;  // Return null on the server
+    : null;
 }
 
 function ChatMessage({ message }) {
@@ -134,7 +167,7 @@ function ChatMessage({ message }) {
     <div
       className={cn(
         "mb-3 flex items-center",
-        isAiMessage ? "me-5 justify-start" : "ms-5 justify-end",
+        isAiMessage ? "me-5 justify-start" : "ms-5 justify-end"
       )}
     >
       {isAiMessage && <Bot className="mr-2 flex-none text-foreground dark:text-dark-foreground" />}
@@ -143,7 +176,7 @@ function ChatMessage({ message }) {
           "rounded-md border px-3 py-2",
           isAiMessage
             ? "bg-background dark:bg-dark-background text-foreground dark:text-dark-foreground"
-            : "bg-foreground text-background dark:bg-dark-foreground dark:text-dark-background",
+            : "bg-foreground text-background dark:bg-dark-foreground dark:text-dark-background"
         )}
       >
         <ReactMarkdown
@@ -155,14 +188,9 @@ function ChatMessage({ message }) {
                 className="text-primary dark:text-dark-primary hover:underline"
               />
             ),
-            p: ({ node, ...props }) => (
-              <p {...props} className="mt-3 first:mt-0" />
-            ),
+            p: ({ node, ...props }) => <p {...props} className="mt-3 first:mt-0" />,
             ul: ({ node, ...props }) => (
-              <ul
-                {...props}
-                className="mt-3 list-inside list-disc first:mt-0"
-              />
+              <ul {...props} className="mt-3 list-inside list-disc first:mt-0" />
             ),
             li: ({ node, ...props }) => <li {...props} className="mt-1" />,
           }}
