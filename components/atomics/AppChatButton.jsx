@@ -11,7 +11,7 @@ export default function AIChatButton() {
     <>
       <button
         onClick={() => setChatBoxOpen(true)}
-        className="p-2 rounded-full bg-gray-200 dark:bg-gray-800 transition-transform duration-300 transform hover:scale-110"
+        className="p-3 rounded-full bg-gray-200 dark:bg-gray-800 transition-transform duration-300 transform hover:scale-110"
         aria-label="Open Chat"
       >
         <Bot

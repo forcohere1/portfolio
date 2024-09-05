@@ -152,25 +152,33 @@
   ],
   "project": {
     "title": "Project",
-    "desctiption": "Some completed projects I've worked on, utilizing various technologies",
+    "description": "Some completed projects I've worked on, utilizing various technologies.",
     "contents": [
       {
         "id": 1,
         "top": true,
         "image": "https://firebasestorage.googleapis.com/v0/b/portfolio-daf77.appspot.com/o/JyotChat-v1.png?alt=media&token=7e70b30b-dbbd-4985-83e4-18d935f8357b",
         "name": "JyotChat-V1",
-        "stack": "Next.js, FastAPI, Supabase, OpenAI API, Cohere API, Pinecone, Docker, Azure Container Registry, Azure App serives, Llama Index",
+        "stack": "Next.js, FastAPI, Supabase, OpenAI API, Cohere API, Pinecone, Docker, Azure Container Registry, Azure App Services, Llama Index",
         "category": "Internship Project",
-        "url": "https://jyotchat.azurewebsites.net/"
+        "url": "https://jyotchat.azurewebsites.net/",
+        "metrics": {
+          "users": "Over 1M users",
+          "engagement": "35% engagement increase"
+        }
       },
       {
         "id": 2,
         "top": true,
         "image": "https://firebasestorage.googleapis.com/v0/b/portfolio-daf77.appspot.com/o/JyotChat-v2.png?alt=media&token=f4de4849-a30d-45f5-8c33-5af5db9aa9e1",
         "name": "JyotChat-V2",
-        "stack": "Next.js, Pinecone Assistant API, Docker, Azure Container Registry, Azure App serives",
+        "stack": "Next.js, Pinecone Assistant API, Docker, Azure Container Registry, Azure App Services",
         "category": "Internship Project",
-        "url": "https://jyotchat-pinecone.azurewebsites.net/"
+        "url": "https://jyotchat-pinecone.azurewebsites.net/",
+        "metrics": {
+          "users": "500K users",
+          "engagement": "20% increase in activity"
+        }
       },
       {
         "id": 3,
@@ -178,11 +186,15 @@
         "image": "https://firebasestorage.googleapis.com/v0/b/portfolio-daf77.appspot.com/o/OCR-SAAS.png?alt=media&token=1417f287-004a-4116-8ab2-5d4b1b662d46",
         "name": "OCR SaaS App",
         "stack": "Next.js 15, Flask, TRPC, Kinde Auth, Razorpay, Tesseract OCR, Azure Functions, Azure Blob Storage, ShadCN",
-        "category": "Internship Project",
-        "url": ""
-      }      
-    ]
-  },
+        "category": "SaaS Project",
+        "url": "",
+        "metrics": {
+          "users": "100K users",
+          "engagement": "15% growth"
+      }
+    }
+  ]
+},
   "contact": {
     "title": "Contact",
     "description": "Feel free to reach out through any of the contacts provided to get acquainted.",

@@ -12,6 +12,42 @@
 }
 
 
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 20s linear infinite;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.bg-gradient-to-r {
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.bg-gradient-to-l {
+  background: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.space-x-6 > * {
+  margin-right: 1.5rem; /* Tailwind's spacing utility */
+}
+
+
 /* .decoration::after {
   content: '';
   @apply hidden xl:block absolute top-0 -left-10 w-px h-60 bg-light-gray;
