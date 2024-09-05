@@ -3,6 +3,15 @@
 @tailwind utilities;
 
 
+@layer utilities {
+  .bg-grid-pattern {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 30px 30px;
+  }
+}
+
+
 /* .decoration::after {
   content: '';
   @apply hidden xl:block absolute top-0 -left-10 w-px h-60 bg-light-gray;
