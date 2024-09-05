@@ -163,7 +163,7 @@
         "category": "Internship Project",
         "url": "https://jyotchat.azurewebsites.net/",
         "metrics": {
-          "users": "Over 1M users",
+          "users": "Over 1K users",
           "engagement": "35% engagement increase"
         }
       },
@@ -176,7 +176,7 @@
         "category": "Internship Project",
         "url": "https://jyotchat-pinecone.azurewebsites.net/",
         "metrics": {
-          "users": "500K users",
+          "users": "5K users",
           "engagement": "20% increase in activity"
         }
       },
@@ -189,7 +189,7 @@
         "category": "SaaS Project",
         "url": "",
         "metrics": {
-          "users": "100K users",
+          "users": "1K users",
           "engagement": "15% growth"
       }
     }

@@ -54,11 +54,11 @@ const Home = () => (
         </div>
       </AppSection>
       <AppSection title="My Projects">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-6">
+        <div className="flex flex-wrap justify-between gap-4">
           {USER.project.contents
             .filter((filteredItem) => filteredItem.top)
-            .map((item) => (
-              <AppProject key={item.id} project={item} />
+            .map((item, index) => (
+              <AppProject key={item.id} project={item} isImageLeft={index % 2 === 0} />
             ))}
         </div>
         <div className="text-center py-7">
@@ -70,6 +70,7 @@ const Home = () => (
           </Link>
         </div>
       </AppSection>
+
     </AppShell>
   </div>
 );

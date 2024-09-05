@@ -3,6 +3,8 @@ import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
 import { useEffect, useRef } from 'react';
+import ThemeToggle from '../../components/atomics/ThemeToggle';
+import Head from 'next/head';
 
 // Static paths generation for each project
 export async function getStaticPaths() {
@@ -122,16 +124,27 @@ const Marquee = ({ stack }) => {
 
 const ProjectDetail = ({ project, prevProject, nextProject }) => {
   return (
-    <div className="container mx-auto px-6 py-12">
-      {/* Title and Description */}
-      <div className="text-center mb-12">
-        <h1 className="text-5xl font-bold mb-4">{project.name}</h1>
-        <p className="text-lg font-medium text-gray-600 dark:text-gray-400">{project.description}</p>
+    <div className="container mx-auto px-6 py-16 relative bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+      
+      <Head>
+        <title>Vijay Chandar | {project.name}</title>
+        <meta name="description" content={project.name} />
+      </Head>
+
+      {/* Dark Mode Toggle */}
+      <div className="absolute top-6 right-6">
+        <ThemeToggle />
       </div>
 
-      {/* Project Image with Stylish Border */}
-      <div className="flex justify-center mb-12">
-        <div className="border-4 border-gray-300 dark:border-gray-700 rounded-xl overflow-hidden shadow-lg">
+      {/* Title and Description */}
+      <div className="text-center mb-16 mt-8">
+        <h1 className="text-5xl font-bold mb-6 text-black dark:text-white">{project.name}</h1>
+        <p className="text-lg font-medium text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">{project.description}</p>
+      </div>
+
+      {/* Project Image with Stylish Border and Animation */}
+      <div className="flex justify-center mb-16">
+        <div className="border-8 border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 transform hover:scale-105">
           <Image
             src={project.image}
             alt={project.name}
@@ -146,86 +159,66 @@ const ProjectDetail = ({ project, prevProject, nextProject }) => {
       {/* Marquee Section */}
       <Marquee stack={project.stack} />
 
-      {/* Project Details */}
-      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 mt-12">
-        {/* Left Column */}
-        <div className="space-y-12">
-          <div>
-            <h3 className="text-xl font-semibold mb-4">MY ROLE</h3>
-            <ul className="space-y-2 text-lg">
-              {project.role.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-xl font-semibold mb-4">DELIVERABLES</h3>
-            <ul className="space-y-2 text-lg">
-              {project.deliverables.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-xl font-semibold mb-4">TEAM</h3>
-            <ul className="space-y-2 text-lg">
-              {project.team.map((member, index) => (
-                <li key={index}>{member}</li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-xl font-semibold mb-4">YEAR</h3>
-            <p className="text-lg">{project.year}</p>
-          </div>
-        </div>
-
-        {/* Right Column */}
-        <div className="space-y-12">
-          {project.theWhat && (
-            <div>
-              <h3 className="text-xl font-semibold mb-4">THE WHAT</h3>
-              <p className="text-lg">{project.theWhat}</p>
-            </div>
-          )}
-
-          {project.theWhy && (
-            <div>
-              <h3 className="text-xl font-semibold mb-4">THE WHY</h3>
-              <p className="text-lg">{project.theWhy}</p>
-            </div>
-          )}
-
-          {project.theHow && (
-            <div>
-              <h3 className="text-xl font-semibold mb-4">THE HOW</h3>
-              <p className="text-lg">{project.theHow}</p>
-            </div>
-          )}
-
-          {project.challenges && (
-            <div>
-              <h3 className="text-xl font-semibold mb-4">CHALLENGES</h3>
-              <p className="text-lg">{project.challenges}</p>
-            </div>
-          )}
-        </div>
+{/* Project Details */}
+<div className="max-w-6xl mx-auto mt-16">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    {project.theWhat && (
+      <div className="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md text-center">
+        <h3 className="text-2xl font-bold mb-4 text-primary">THE WHAT</h3>
+        <p className="text-lg text-justify text-gray-800 dark:text-gray-300">{project.theWhat}</p>
       </div>
+    )}
+
+    {project.theWhy && (
+      <div className="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md text-center">
+        <h3 className="text-2xl font-bold mb-4 text-primary">THE WHY</h3>
+        <p className="text-lg text-justify  text-gray-800 dark:text-gray-300">{project.theWhy}</p>
+      </div>
+    )}
+
+    {project.theHow && (
+      <div className="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md text-center">
+        <h3 className="text-2xl font-bold mb-4 text-primary">THE HOW</h3>
+        <p className="text-lg text-justify  text-gray-800 dark:text-gray-300">{project.theHow}</p>
+      </div>
+    )}
+
+    {project.challenges && (
+      <div className="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md text-center">
+        <h3 className="text-2xl font-bold mb-4 text-primary">CHALLENGES</h3>
+        <p className="text-lg text-justify  text-gray-800 dark:text-gray-300">{project.challenges}</p>
+      </div>
+    )}
+
+    {project.keyMotivators && (
+      <div className="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md text-center">
+        <h3 className="text-2xl font-bold mb-4 text-primary">MOTIVATION</h3>
+        <p className="text-lg text-justify  text-gray-800 dark:text-gray-300">{project.keyMotivators}</p>
+      </div>
+    )}
+
+    {project.resultsAndLearning && (
+      <div className="p-6 bg-gray-100 dark:bg-gray-500 rounded-lg shadow-md text-center">
+        <h3 className="text-2xl font-bold mb-4 text-primary">Results and Learning</h3>
+        <p className="text-lg text-justify text-gray-800 dark:text-gray-300">{project.resultsAndLearning}</p>
+      </div>
+    )}
+  </div>
+</div>
+
+
 
       {/* Navigation Links */}
-      <div className="flex justify-between mt-12">
+      <div className="flex justify-between mt-16">
         {prevProject ? (
-          <Link href={`/projects/${prevProject.id}`} className="text-primary hover:underline">
+          <Link href={`/projects/${prevProject.id}`} className="text-primary hover:underline text-lg">
             ← {prevProject.name}
           </Link>
         ) : (
           <div />  // Empty div to maintain layout
         )}
         {nextProject ? (
-          <Link href={`/projects/${nextProject.id}`} className="text-primary hover:underline">
+          <Link href={`/projects/${nextProject.id}`} className="text-primary hover:underline text-lg">
             {nextProject.name} →
           </Link>
         ) : (
@@ -237,3 +230,4 @@ const ProjectDetail = ({ project, prevProject, nextProject }) => {
 };
 
 export default ProjectDetail;
+

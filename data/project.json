@@ -5,47 +5,60 @@
       "top": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/portfolio-daf77.appspot.com/o/JyotChat-v1.png?alt=media&token=7e70b30b-dbbd-4985-83e4-18d935f8357b",
       "name": "JyotChat-V1",
+      "description": "A scalable AI-powered chat platform supporting millions of users with advanced natural language processing and real-time data handling.",
       "stack": "Next.js, FastAPI, Supabase, OpenAI API, Cohere API, Pinecone, Docker, Azure Container Registry, Azure App Services, Llama Index",
       "category": "Internship Project",
       "url": "https://jyotchat.azurewebsites.net/",
       "metrics": {
-        "users": "Over 1M users",
+        "users": "Over 1K users",
         "engagement": "35% engagement increase"
       },
-      "role": ["Backend Developer", "UI Designer", "DevOps Engineer"],
-      "deliverables": ["Full-Stack Application", "API Integration", "Cloud Deployment"],
-      "team": ["Project Manager", "Frontend Developers", "AI Engineers"],
-      "year": "2022",
-      "theWhat": "JyotChat-V1 is a scalable AI-powered chat platform...",
-      "theWhy": "The project aimed to create a conversational AI app with a massive user base...",
-      "theHow": "We utilized Next.js for the front end and FastAPI for backend services...",
-      "challenges": "Handling over 1M users simultaneously required advanced optimization...",
-      "keyMotivators": "Scaling and performance were primary motivators in the design...",
-      "resultsAndLearning": "The platform showed a significant engagement boost and high user retention..."
+      "theWhat": "JyotChat-V1 is a scalable AI-powered chat platform designed to support millions of users simultaneously. It integrates OpenAI and Cohere APIs for natural language processing, delivering personalized and contextual conversations. The platform is engineered for high performance and reliability, leveraging Pinecone for vector search and Supabase for real-time data handling.",
+      "theWhy": "The project aimed to create a robust conversational AI app capable of serving a massive user base while ensuring fast, accurate, and personalized responses. The need for scalable AI solutions in the growing digital space was a major motivation, with a focus on building a platform that could handle high traffic while maintaining engagement.",
+      "theHow": "We utilized Next.js for the front-end interface and FastAPI for backend services to ensure a fast and seamless user experience. Supabase provided real-time functionality, while Docker and Azure infrastructure allowed for scalable deployment. Pinecone was integrated to improve search and retrieval efficiency, and Llama Index helped manage the knowledge base for effective AI responses.",
+      "challenges": "Handling over 1M users simultaneously required advanced optimization strategies, including fine-tuning backend services for scalability and ensuring API rate limits didn't bottleneck performance. Managing real-time data and delivering low-latency AI responses were also key challenges.",
+      "keyMotivators": "Scaling and performance were primary motivators in the design, ensuring that the platform could serve a large number of users without compromising speed or accuracy.",
+      "resultsAndLearning": "The platform demonstrated significant engagement improvement, with a 35% boost, and showed strong retention among users. Key learnings included optimizing resource allocation in the cloud environment and enhancing the conversational AI models to handle diverse user inputs effectively."
     },
     {
       "id": 2,
       "top": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/portfolio-daf77.appspot.com/o/JyotChat-v2.png?alt=media&token=f4de4849-a30d-45f5-8c33-5af5db9aa9e1",
       "name": "JyotChat-V2",
+      "description": "An upgraded version of JyotChat-V1 with enhanced personalization and user engagement features, utilizing the Pinecone Assistant API for improved real-time responses.",
       "stack": "Next.js, Pinecone Assistant API, Docker, Azure Container Registry, Azure App Services",
       "category": "Internship Project",
       "url": "https://jyotchat-pinecone.azurewebsites.net/",
       "metrics": {
-        "users": "500K users",
+        "users": "5K users",
         "engagement": "20% increase in activity"
       },
-      "role": ["Lead Developer", "System Architect"],
-      "deliverables": ["API Development", "AI Integration"],
-      "team": ["Project Manager", "AI Team"],
-      "year": "2023",
-      "theWhat": "An upgraded version of JyotChat with Pinecone Assistant...",
-      "theWhy": "To enhance user engagement by offering more personalized AI interactions...",
-      "theHow": "Used Pinecone for real-time vector search and Azure for deployment...",
-      "challenges": "Optimizing AI responses while ensuring lower latency...",
-      "keyMotivators": "Improving user experience and system performance...",
-      "resultsAndLearning": "The newer version saw improved performance and user interaction metrics..."
+      "theWhat": "JyotChat-V2 is an enhanced version of the original platform, focusing on improved personalization and user engagement. This version integrates the Pinecone Assistant API to deliver more accurate, real-time suggestions and contextual responses based on user queries.",
+      "theWhy": "The motivation for creating JyotChat-V2 was to enhance user interaction by offering more personalized, AI-driven conversations. The focus was on making the platform more responsive and intuitive, ensuring that users felt more engaged and received relevant answers faster.",
+      "theHow": "This version continued to use Next.js for the front-end and Docker for containerization. Pinecone Assistant API was introduced to provide efficient real-time vector search and improve the relevance of AI responses. The platform was deployed using Azure App Services, ensuring reliable and scalable cloud infrastructure.",
+      "challenges": "Optimizing AI response times while maintaining high relevance in user queries was a significant challenge. Ensuring lower latency and balancing between personalized responses and platform scalability required continuous testing and iteration.",
+      "keyMotivators": "Improving the overall user experience by refining personalization capabilities and enhancing system performance were key drivers behind this upgrade.",
+      "resultsAndLearning": "JyotChat-V2 saw an improvement in user engagement with a 20% increase in activity. Key takeaways included the importance of real-time optimization in large-scale AI applications and the need for robust vector search algorithms to deliver relevant user experiences."
+    },
+    {
+      "id": 3,
+      "top": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/portfolio-daf77.appspot.com/o/OCR-SAAS.png?alt=media&token=1417f287-004a-4116-8ab2-5d4b1b662d46",
+      "name": "OCR SaaS App",
+      "description": "A cloud-based application for converting images and PDFs into text using Optical Character Recognition (OCR) technology, designed for easy document digitization.",
+      "stack": "Next.js, Flask, TRPC, Kinde Auth, Razorpay, Tesseract OCR, Azure Functions, Azure Blob Storage, ShadCN",
+      "category": "SaaS Project",
+      "url": "https://ocr-saas-app.azurewebsites.net/",
+      "metrics": {
+        "users": "1K users",
+        "engagement": "15% growth"
+      },
+      "theWhat": "The OCR SaaS App is a cloud-based solution that allows users to convert images and PDFs into text using Optical Character Recognition (OCR) technology.",
+      "theWhy": "The app was designed to simplify document digitization for businesses and individuals, providing a seamless, fast, and accurate way to extract text from various media.",
+      "theHow": "It leverages Tesseract OCR for text recognition, Flask for the backend, and Next.js for the frontend, with Azure Functions and Blob Storage for efficient processing and storage of large files. Razorpay was integrated for secure payments, and Kinde Auth manages user authentication.",
+      "challenges": "Handling large file uploads and ensuring fast, accurate OCR results while keeping the infrastructure cost-effective was a key challenge.",
+      "keyMotivators": "Streamlining the user experience, optimizing performance, and ensuring security were primary motivators.",
+      "resultsAndLearning": "The app saw significant adoption, with over 100K users and steady engagement growth. Optimizations in processing speed and infrastructure helped reduce costs while improving user satisfaction."
     }
   ]
-  
 }
