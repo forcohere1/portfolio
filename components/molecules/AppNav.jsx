@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import USER from '../../data/user.json';
 import AppToggle from '../atomics/AppToggle';
+import ThemeToggle from '../atomics/ThemeToggle';
+import AIChatButton from '../atomics/AppChatButton';
 
 const AppNav = () => {
   const [isActiveNav, setIsActiveNav] = useState(false);
@@ -43,6 +45,7 @@ const AppNav = () => {
   }, []);
 
   return (
+    
     <nav
       className={`flex items-center justify-between fixed top-0 z-40 w-full max-w-[1905px] transform right-1/2 translate-x-1/2 md:px-10 2xl:px-20 md:py-3 transition duration-500 ${
         isActiveNav ? 'bg-white dark:bg-black' : ''
@@ -61,6 +64,12 @@ const AppNav = () => {
             height={70}
           />
         </Link>
+
+        {/* Icons for small devices */}
+        <div className="flex space-x-4 sm:flex md:hidden pr-0">
+          <AIChatButton />
+          <ThemeToggle />
+        </div>
 
         <AppToggle onClick={handleToggler} active={isActiveToggler} />
       </div>

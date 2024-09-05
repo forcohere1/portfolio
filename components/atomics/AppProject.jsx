@@ -34,7 +34,7 @@ const AppProject = ({ project, isImageLeft }) => {
         ${isImageLeft ? 'rounded-l-lg md:rounded-r-none' : 'rounded-r-lg md:rounded-l-none'}
         `}
       >
-        <Link href={project.url || '#'}>
+        <Link href={project.url || '#'} target="_blank" rel="noopener noreferrer">
           <div>
             <p className="text-sm font-semibold mb-2">{project.category}</p>
             <h3 className="text-2xl font-bold mb-4 hover:text-primary transition-colors duration-300">

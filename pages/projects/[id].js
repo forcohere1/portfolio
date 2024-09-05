@@ -138,7 +138,7 @@ const ProjectDetail = ({ project, prevProject, nextProject }) => {
 
       {/* Title and Description */}
       <div className="text-center mb-16 mt-8">
-        <h1 className="text-5xl font-bold mb-6 text-black dark:text-white">{project.name}</h1>
+        <h1 className="text-5xl font-bold mb-6 text-primary dark:text-primary">{project.name}</h1>
         <p className="text-lg font-medium text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">{project.description}</p>
       </div>
 
@@ -163,42 +163,42 @@ const ProjectDetail = ({ project, prevProject, nextProject }) => {
 <div className="max-w-6xl mx-auto mt-16">
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
     {project.theWhat && (
-      <div className="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md text-center">
+      <div className="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md text-center dark:border dark:border-primary">
         <h3 className="text-2xl font-bold mb-4 text-primary">THE WHAT</h3>
         <p className="text-lg text-justify text-gray-800 dark:text-gray-300">{project.theWhat}</p>
       </div>
     )}
 
     {project.theWhy && (
-      <div className="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md text-center">
+      <div className="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md text-center dark:border dark:border-primary">
         <h3 className="text-2xl font-bold mb-4 text-primary">THE WHY</h3>
         <p className="text-lg text-justify  text-gray-800 dark:text-gray-300">{project.theWhy}</p>
       </div>
     )}
 
     {project.theHow && (
-      <div className="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md text-center">
+      <div className="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md text-center dark:border dark:border-primary">
         <h3 className="text-2xl font-bold mb-4 text-primary">THE HOW</h3>
         <p className="text-lg text-justify  text-gray-800 dark:text-gray-300">{project.theHow}</p>
       </div>
     )}
 
     {project.challenges && (
-      <div className="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md text-center">
+      <div className="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md text-center dark:border dark:border-primary">
         <h3 className="text-2xl font-bold mb-4 text-primary">CHALLENGES</h3>
         <p className="text-lg text-justify  text-gray-800 dark:text-gray-300">{project.challenges}</p>
       </div>
     )}
 
     {project.keyMotivators && (
-      <div className="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md text-center">
+      <div className="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md text-center dark:border dark:border-primary">
         <h3 className="text-2xl font-bold mb-4 text-primary">MOTIVATION</h3>
         <p className="text-lg text-justify  text-gray-800 dark:text-gray-300">{project.keyMotivators}</p>
       </div>
     )}
 
     {project.resultsAndLearning && (
-      <div className="p-6 bg-gray-100 dark:bg-gray-500 rounded-lg shadow-md text-center">
+      <div className="p-6 bg-gray-100 dark:bg-gray-500 rounded-lg shadow-md text-center dark:border dark:border-primary">
         <h3 className="text-2xl font-bold mb-4 text-primary">Results and Learning</h3>
         <p className="text-lg text-justify text-gray-800 dark:text-gray-300">{project.resultsAndLearning}</p>
       </div>
