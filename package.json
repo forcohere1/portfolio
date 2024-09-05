@@ -14,7 +14,7 @@
     "@nanostores/react": "github:ai/react",
     "@react-three/drei": "^9.112.0",
     "@react-three/fiber": "^8.17.6",
-    "ai": "^3.3.26",
+    "ai": "^3.3.27",
     "clsx": "^2.1.1",
     "emailjs-com": "^3.2.0",
     "firebase": "^8.10.1",
