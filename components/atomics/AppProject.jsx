@@ -47,8 +47,13 @@ const AppProject = ({ project, isImageLeft }) => {
             </div>
           </div>
         </Link>
-        <Link href={`/projects/${project.id}`}>
-          <div className="mt-4 ml-auto text-primary flex items-center hover:underline cursor-pointer">
+        <Link 
+          href={`/projects/${project.id}`} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="mt-4 ml-auto text-primary flex items-center hover:underline cursor-pointer"
+        >
+          <div>
             Learn More <span className="ml-2">→</span>
           </div>
         </Link>

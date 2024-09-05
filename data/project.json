@@ -1,37 +1,51 @@
 {
-    "projects": [
-      {
-        "id": 1,
-        "name": "Digitizing Tangerines' Range of Financial Services",
-        "category": "Internship Project",
-        "image": "/images/project1.png",
-        "role": ["UX Designer", "User Research", "UI Designer"],
-        "deliverables": ["Component Library", "High Fidelity Designs", "Usability Testing"],
-        "team": ["Product Manager", "Developers (iOS and Android)", "Web Developers"],
-        "year": "2020-2022",
-        "theWhat": "Imagine having a single app that lets you bank, save, spend, insure, invest, and manage your money...",
-        "theWhy": "Tangerine had been insuring and developing savings plans for customers using the traditional approach...",
-        "theHow": "The development process involved iterative design sprints, user feedback integration, and cross-team collaboration...",
-        "challenges": "The most challenging aspect was integrating a seamless user experience...",
-        "keyMotivators": "Key motivators included user-centric design principles...",
-        "resultsAndLearning": "The project resulted in a user-friendly app that met user needs, improved usability, and increased satisfaction..."
+  "projects": [
+    {
+      "id": 1,
+      "top": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/portfolio-daf77.appspot.com/o/JyotChat-v1.png?alt=media&token=7e70b30b-dbbd-4985-83e4-18d935f8357b",
+      "name": "JyotChat-V1",
+      "stack": "Next.js, FastAPI, Supabase, OpenAI API, Cohere API, Pinecone, Docker, Azure Container Registry, Azure App Services, Llama Index",
+      "category": "Internship Project",
+      "url": "https://jyotchat.azurewebsites.net/",
+      "metrics": {
+        "users": "Over 1M users",
+        "engagement": "35% engagement increase"
       },
-      {
-        "id": 2,
-        "name": "Project 2",
-        "category": "Client Work",
-        "image": "/images/project2.png",
-        "role": ["Project Manager", "UX Designer"],
-        "deliverables": ["UI Design", "Prototype"],
-        "team": ["Developers", "Product Owner"],
-        "year": "2021",
-        "theWhat": "Project 2 focused on creating a collaborative tool...",
-        "theWhy": "The goal was to enhance productivity for remote teams...",
-        "theHow": "The solution was developed through Agile methodology...",
-        "challenges": "Tight deadlines and a shifting scope presented difficulties...",
-        "keyMotivators": "A key factor was the demand for remote work tools...",
-        "resultsAndLearning": "The tool significantly improved team communication and task management..."
-      }
-    ]
-  }
+      "role": ["Backend Developer", "UI Designer", "DevOps Engineer"],
+      "deliverables": ["Full-Stack Application", "API Integration", "Cloud Deployment"],
+      "team": ["Project Manager", "Frontend Developers", "AI Engineers"],
+      "year": "2022",
+      "theWhat": "JyotChat-V1 is a scalable AI-powered chat platform...",
+      "theWhy": "The project aimed to create a conversational AI app with a massive user base...",
+      "theHow": "We utilized Next.js for the front end and FastAPI for backend services...",
+      "challenges": "Handling over 1M users simultaneously required advanced optimization...",
+      "keyMotivators": "Scaling and performance were primary motivators in the design...",
+      "resultsAndLearning": "The platform showed a significant engagement boost and high user retention..."
+    },
+    {
+      "id": 2,
+      "top": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/portfolio-daf77.appspot.com/o/JyotChat-v2.png?alt=media&token=f4de4849-a30d-45f5-8c33-5af5db9aa9e1",
+      "name": "JyotChat-V2",
+      "stack": "Next.js, Pinecone Assistant API, Docker, Azure Container Registry, Azure App Services",
+      "category": "Internship Project",
+      "url": "https://jyotchat-pinecone.azurewebsites.net/",
+      "metrics": {
+        "users": "500K users",
+        "engagement": "20% increase in activity"
+      },
+      "role": ["Lead Developer", "System Architect"],
+      "deliverables": ["API Development", "AI Integration"],
+      "team": ["Project Manager", "AI Team"],
+      "year": "2023",
+      "theWhat": "An upgraded version of JyotChat with Pinecone Assistant...",
+      "theWhy": "To enhance user engagement by offering more personalized AI interactions...",
+      "theHow": "Used Pinecone for real-time vector search and Azure for deployment...",
+      "challenges": "Optimizing AI responses while ensuring lower latency...",
+      "keyMotivators": "Improving user experience and system performance...",
+      "resultsAndLearning": "The newer version saw improved performance and user interaction metrics..."
+    }
+  ]
   
+}
