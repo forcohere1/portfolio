@@ -1,0 +1,175 @@
+import { cn } from "../../lib/utils";
+import { useChat } from "ai/react";
+import { Bot, SendHorizontal, Trash, XCircle } from "lucide-react";
+import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
+import ReactMarkdown from "react-markdown";
+import { createPortal } from 'react-dom';
+
+export default function AIChatBox({ open, onClose }) {
+  const {
+    messages,
+    input,
+    handleInputChange,
+    handleSubmit,
+    setMessages,
+    isLoading,
+    error,
+  } = useChat();
+
+  const inputRef = useRef(null);
+  const scrollRef = useRef(null);
+  const [isBrowser, setIsBrowser] = useState(false);  // State to track if we're in the browser
+
+  useEffect(() => {
+    setIsBrowser(true);  // Set this to true when in the browser
+  }, []);
+
+  useEffect(() => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
+    }
+  }, [messages]);
+
+  useEffect(() => {
+    if (open) {
+      inputRef.current?.focus();
+    }
+  }, [open]);
+
+  const lastMessageIsUser = messages[messages.length - 1]?.role === "user";
+
+  // Only return the portal if we're in the browser
+  return isBrowser
+    ? createPortal(
+        <>
+          {/* Semi-transparent backdrop for the background (not affecting chatbox) */}
+          {open && (
+            <div className="fixed inset-0 bg-black/50 dark:bg-black/80 backdrop-blur-sm z-[999] pointer-events-none"></div>
+          )}
+
+          {/* Chatbox */}
+          <div
+            className={cn(
+              "fixed bottom-0 right-0 z-[1000] w-full max-w-[500px] p-1 xl:right-36", // Reduced max-width
+              open ? "fixed" : "hidden",
+            )}
+          >
+            <button onClick={onClose} className="mb-1 ms-auto block">
+              <XCircle size={30} className="rounded-full bg-white dark:bg-black" />
+            </button>
+            <div className="flex h-[500px] flex-col rounded border bg-white dark:bg-black dark:border-dark-border shadow-xl">
+              {/* Ensure the chatbox has a solid background */}
+              <div className="mt-3 h-full overflow-y-auto px-3" ref={scrollRef}>
+                {messages.map((message) => (
+                  <ChatMessage message={message} key={message.id} />
+                ))}
+                {isLoading && lastMessageIsUser && (
+                  <ChatMessage
+                    message={{
+                      id: "loading",
+                      role: "assistant",
+                      content: "Thinking...",
+                    }}
+                  />
+                )}
+                {error && (
+                  <ChatMessage
+                    message={{
+                      id: "error",
+                      role: "assistant",
+                      content: "Something went wrong. Please try again!",
+                    }}
+                  />
+                )}
+                {!error && messages.length === 0 && (
+                  <div className="mx-8 flex h-full flex-col items-center justify-center gap-3 text-center">
+                    <Bot size={28} className="text-foreground dark:text-dark-foreground" />
+                    <p className="text-lg font-medium text-foreground dark:text-dark-foreground">
+                      Send a message to start the AI chat!
+                    </p>
+                    <p className="text-foreground dark:text-dark-foreground">
+                      You can ask the chatbot any question about me, and it will find the relevant information.
+                    </p>
+                  </div>
+                )}
+              </div>
+              <form onSubmit={handleSubmit} className="m-3 flex gap-1">
+                <button
+                  type="button"
+                  className="flex w-10 flex-none items-center justify-center text-foreground dark:text-dark-foreground"
+                  title="Clear chat"
+                  onClick={() => setMessages([])}
+                >
+                  <Trash size={24} />
+                </button>
+                <input
+                  value={input}
+                  onChange={handleInputChange}
+                  placeholder="Say something..."
+                  className="grow rounded border bg-background dark:bg-dark-background text-foreground dark:text-dark-foreground px-3 py-2"
+                  ref={inputRef}
+                />
+                <button
+                  type="submit"
+                  className="flex w-10 flex-none items-center justify-center disabled:opacity-50 text-foreground dark:text-dark-foreground"
+                  disabled={input.length === 0}
+                  title="Submit message"
+                >
+                  <SendHorizontal size={24} />
+                </button>
+              </form>
+            </div>
+          </div>
+        </>,
+        document.body // Portal target is body
+      )
+    : null;  // Return null on the server
+}
+
+function ChatMessage({ message }) {
+  const isAiMessage = message.role === "assistant";
+
+  return (
+    <div
+      className={cn(
+        "mb-3 flex items-center",
+        isAiMessage ? "me-5 justify-start" : "ms-5 justify-end",
+      )}
+    >
+      {isAiMessage && <Bot className="mr-2 flex-none text-foreground dark:text-dark-foreground" />}
+      <div
+        className={cn(
+          "rounded-md border px-3 py-2",
+          isAiMessage
+            ? "bg-background dark:bg-dark-background text-foreground dark:text-dark-foreground"
+            : "bg-foreground text-background dark:bg-dark-foreground dark:text-dark-background",
+        )}
+      >
+        <ReactMarkdown
+          components={{
+            a: ({ node, ref, ...props }) => (
+              <Link
+                {...props}
+                href={props.href ?? ""}
+                className="text-primary dark:text-dark-primary hover:underline"
+              />
+            ),
+            p: ({ node, ...props }) => (
+              <p {...props} className="mt-3 first:mt-0" />
+            ),
+            ul: ({ node, ...props }) => (
+              <ul
+                {...props}
+                className="mt-3 list-inside list-disc first:mt-0"
+              />
+            ),
+            li: ({ node, ...props }) => <li {...props} className="mt-1" />,
+          }}
+        >
+          {message.content}
+        </ReactMarkdown>
+      </div>
+    </div>
+  );
+}

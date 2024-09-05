@@ -19,6 +19,7 @@ module.exports = {
       'dark-light-gray': '#A9A9A9',
       'dark-black': '#E5E5E5', // lighter black for dark mode
       'dark-primary': '#ff4da6', // a brighter variant of hot pink for dark mode
+      'dark-border': '#3a3a3a',
     },
     extend: {
       backgroundImage: () => ({

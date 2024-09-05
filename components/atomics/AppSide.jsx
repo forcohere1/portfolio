@@ -1,6 +1,7 @@
 import USER from '../../data/user.json';
 import ThemeToggle from './ThemeToggle';
-
+import AIChatButton
+ from './AppChatButton';
 const AppSide = () => (
   <div className="hidden md:flex justify-between fixed bottom-0 left-0 right-0 z-10 w-full px-3 md:px-10 2xl:px-20 max-w-[1905px] mx-auto">
     <aside className="flex flex-col items-center">
@@ -26,6 +27,7 @@ const AppSide = () => (
       <div className="h-28 w-[2px] bg-primary dark:bg-dark-primary mt-5" />
     </aside>
     <aside className="flex flex-col justify-end items-center">
+      <AIChatButton />
       <ThemeToggle />
       {[USER.contact.contents.find((item) => item.category === 'Email')].map(
         (item) => (
